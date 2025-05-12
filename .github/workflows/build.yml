@@ -1,0 +1,25 @@
+name: build
+
+on: push
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: set env
+        run: echo "BUILD_TIME=$(date +'%s')" >> $GITHUB_ENV
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: create new release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ env.BUILD_TIME }}
+          release_name: ${{ env.BUILD_TIME }}
+          body: |
+            Automatically generated release for tag `${{ env.BUILD_TIME }}`
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

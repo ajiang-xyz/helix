@@ -1,0 +1,40 @@
+theme = "edge_neon"
+
+[editor]
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+"C-/" = "toggle_comments"
+"C-right" = "move_next_word_start"
+"C-left" = "move_prev_word_end"
+"{" = "goto_prev_paragraph"
+"}" = "goto_next_paragraph"
+"(" = "page_cursor_half_up"
+")" = "page_cursor_half_down"
+"S-tab" = "unindent"
+"C-home" = "goto_file_start"
+"C-end" = "goto_last_line"
+
+[keys.insert]
+"C-/" = "toggle_comments"
+"C-right" = "move_next_word_start"
+"C-left" = "move_prev_word_end"
+"C-backspace" = "delete_word_backward"
+"C-del" = "delete_word_forward"
+"S-tab" = "unindent"
+
+[keys.select]
+"C-/" = "toggle_comments"
+"C-right" = "extend_next_word_start"
+"C-left" = "extend_prev_word_end"
+"C-home" = "goto_file_start"
+"C-end" = "goto_last_line"
