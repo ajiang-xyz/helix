@@ -13,6 +13,7 @@ display-inlay-hints = true
 enable = true
 
 [keys.normal]
+"C-t" = ["vsplit", ":open C:\\ProgramData\\lsp-ai\\lsp-chat.md"]
 "C-h" = "@%s"
 "C-/" = "toggle_comments"
 "C-right" = "move_next_word_start"
