@@ -35,6 +35,10 @@ language-servers = [ "lsp-ai" ]
 
 [language-server.gpt]
 command = "helix-gpt"
+args = [
+  "--handler",
+  "codeium"
+]
 
 #################### lsp-ai ####################
 # https://github.com/SilasMarvin/lsp-ai/releases/latest
