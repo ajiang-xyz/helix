@@ -15,7 +15,7 @@ args = [
 # `rustup component add rust-analyzer`
 [[language]]
 name = "rust"
-language-servers = [ "rust-analyzer", "lsp-ai" ]
+language-servers = [ "rust-analyzer", "gpt" ]
 auto-format = true
 
 [language-server.rust-analyzer.config.check]
@@ -24,6 +24,17 @@ command = "clippy"
 [[language]]
 name = "markdown"
 language-servers = [ "lsp-ai" ]
+
+# [language-server.gpt]
+# command = "node"
+# args = [
+#   "C:\\ProgramData\\helix-ai\\helix-gpt.js",
+#   "--handler",
+#   "codeium"
+# ]
+
+[language-server.gpt]
+command = "helix-gpt"
 
 #################### lsp-ai ####################
 # https://github.com/SilasMarvin/lsp-ai/releases/latest

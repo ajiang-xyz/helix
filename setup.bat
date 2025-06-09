@@ -1,0 +1,1 @@
+mklink /j C:\ProgramData\helix-ai helix-ai

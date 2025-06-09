@@ -1,1 +1,0 @@
-mklink /j C:\ProgramData\lsp-ai lsp-ai
