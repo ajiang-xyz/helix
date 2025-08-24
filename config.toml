@@ -2,6 +2,7 @@ theme = "edge_neon"
 
 [editor]
 end-of-line-diagnostics = "hint"
+true-color = true
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
@@ -13,7 +14,7 @@ display-inlay-hints = true
 enable = true
 
 [keys.normal]
-"C-t" = ["vsplit", ":open C:\\ProgramData\\helix-ai\\lsp-chat.md"]
+# "C-t" = ["vsplit", ":open C:\\ProgramData\\helix-ai\\lsp-chat.md"]
 "C-h" = "@%s"
 "C-/" = "toggle_comments"
 "C-right" = "move_next_word_start"
